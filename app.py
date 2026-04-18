@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, jsonify
-import g4f  # Добавляем этот импорт!
+import g4f 
 
 app = Flask(__name__)
 
