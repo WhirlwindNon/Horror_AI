@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horror_AI</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <div class ="container">
+        <h1>Ваши страшные истории</h1> 
+        <input type="text" id="topicInput" placeholder="Введите тему...">
+        <buttton onclick="getStory()">Создать историю</buttton>
+         <div id="result" class="story-text"></div>
+    </div>
+     <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
