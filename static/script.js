@@ -18,7 +18,7 @@ async function getStory() {
         const data = await response.json();
         resultDiv.innerText = data.story;
     } catch (error) {
-        resultDiv.innerText = "Ошибка связи с сервером. Проверь терминал в VS Code.";
+        resultDiv.innerText = "Ошибка связи с сервером.";
         console.error(error);
     }
 }
